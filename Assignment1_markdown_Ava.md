@@ -1,6 +1,6 @@
 
 
-#  Avadhut Chaudhari                                                                                                   Batch 2
+#  Avadhut C                                                                                              
 
 ##  1. Convolution
 
@@ -24,23 +24,23 @@ Following Images shows convolution process in image.
 
 #### a.  Input image and Filter / Kernel
 
- ![convolve1](C:\Users\Nwh\Desktop\convolve1.PNG)
+  ![convolve1](pictures/convolve1.PNG)
 
 
 
 #### b.  Result of Convolution
 
-#### ![convolve2](C:\Users\Nwh\Desktop\convolve2.PNG)
+#### ![convolve2](pictures/convolve2.PNG)
 
 #### c.  Feature/ Activation map generation 
 
-#### ![convolve3](C:\Users\Nwh\Desktop\convolve3.PNG)
+#### ![convolve3](pictures/convolve3.PNG)
 
 
 
 #### d. Number of filters is same as number of feature/ activation maps
 
-![convolve4](C:\Users\Nwh\Desktop\convolve4.PNG)
+![convolve4](pictures/convolve4.PNG)
 
 ## 2. Filters/ Kernels
 
@@ -50,33 +50,33 @@ Filters used to feature extraction- Blur, Outline, Contrast, Horizontal lines, V
 
  2.1 Right Sobel Filter –to extract vertical features
 
-#####     	![kernel1](C:\Users\Nwh\Desktop\kernel1.PNG)
+#####     	![kernel1](pictures/kernel1.PNG)
 
  2.2 Top Sobel Filter –to extract horizontal features
 
-##### 	![kernel2](C:\Users\Nwh\Desktop\kernel2.PNG)
+##### 	![kernel2](pictures/kernel2.PNG)
 
 #### a. Shapes with Single Filter
 
-![kernel3](C:\Users\Nwh\Desktop\kernel3.PNG)
+![kernel3](pictures/kernel3.PNG)
 
 
 
 #### b. Shapes with 3 Filters and 2D image
 
-![kernel4](C:\Users\Nwh\Desktop\kernel4.PNG)
+![kernel4](pictures/kernel4.PNG)
 
 
 
 #### c. Shapes with Single filter and 3-D Image 
 
-![kernel5](C:\Users\Nwh\Desktop\kernel5.PNG)
+![kernel5](pictures/kernel5.PNG)
 
 
 
 #### d. Shapes with N filters and 3-D Image 
 
-​      ![kernel6](C:\Users\Nwh\Desktop\kernel6.PNG)
+​      ![kernel6](pictures/kernel6.PNG)
 
 ## 3. Epochs
 
@@ -85,7 +85,7 @@ training dataset are passed in both forward and backward way only once in neural
 
 Care has to be taken while choosing epochs value to be optimum. Higher value can lead to over fitting and lower value can lead to under fitting model.     
 
-![epochs](C:\Users\Nwh\Desktop\epochs.PNG)
+![epochs](pictures/epochs.PNG)
 
 
 
@@ -95,7 +95,7 @@ Care has to be taken while choosing epochs value to be optimum. Higher value can
 
 In 1x1 convolution, 1x1x no of channels of input convolutions. In convolutional nets, 1x1 convolution kernels and full connection table used.​ 1x1 Convolution never be used in the beginning layers to avoid loss of important information or features of image.
 
-![11convolve](C:\Users\Nwh\Desktop\11convolve.PNG)
+![11convolve](pictures/11convolve.PNG)
 
 
 
@@ -105,7 +105,7 @@ In 3x3 convolution, filter or kernel of size 3x3 used to slide over input image.
 
 For example, if we have an image of size 5x5 , with 5x5 kernel we get output of 1x1  and with two 3x3 kernel we can get same output 1x1. 
 
-Also for an image of size 7x7, with 7x7 kernel we get output of 1x1 and with three 3x3 kernel we can get same output 1x1 and so on.    ![33convolve](C:\Users\Nwh\Desktop\33convolve.PNG)
+Also for an image of size 7x7, with 7x7 kernel we get output of 1x1 and with three 3x3 kernel we can get same output 1x1 and so on.    ![33convolve](pictures/33convolve.PNG)
 
 
 
@@ -113,17 +113,17 @@ Also for an image of size 7x7, with 7x7 kernel we get output of 1x1 and with thr
 
 Main goal is to have small features first and then build complex features on their top. Feature maps helps in this process by providing a separate channel for any feature. Feature maps are are nothing but channels or images.
 
-Feature maps or activation maps are generated as a result of convolution between input image and kernel or filters. The number of feature maps generated always equal to number of filters used in convolution process.     ![convolve4](C:\Users\Nwh\Desktop\convolve4.PNG)
+Feature maps or activation maps are generated as a result of convolution between input image and kernel or filters. The number of feature maps generated always equal to number of filters used in convolution process.     ![convolve4](pictures/convolve4.PNG)
 
 We get different types of features at different feature map stages where convolution applied.
 
 At the beginning we get low level features like edges in the image, after that mid-level features like shapes, blobs and last stage high level features like face or interested objects.
 
-​    ![featuremap2](C:\Users\Nwh\Desktop\featuremap2.PNG)
+​    ![featuremap2](pictures/featuremap2.PNG)
 
 ## 7. Feature Engineering
 
-Most of the times, the given features in the dataset are no sufficient to give satisfactory results. In such case we have to create new features which might help in improving model performance. This can be achieved by transforming training data and augmenting it with additional features. This can be done in feature wise and sample wise data centering and standard normalization, it also might include rotation, horizontal flip, vertical flip, and zoom operation on images.![featureengg](C:\Users\Nwh\Desktop\featureengg.PNG)
+Most of the times, the given features in the dataset are no sufficient to give satisfactory results. In such case we have to create new features which might help in improving model performance. This can be achieved by transforming training data and augmenting it with additional features. This can be done in feature wise and sample wise data centering and standard normalization, it also might include rotation, horizontal flip, vertical flip, and zoom operation on images.![featureengg](pictures/featureengg.PNG)
 
 ## 8. Activation Function
 
@@ -135,7 +135,7 @@ Consider x0 = 1.
 
 So output, y = w0. x0 + w1.  x1 + w2. x2
 
-​    ![activationfun](C:\Users\Nwh\Desktop\activationfun.PNG)
+​    ![activationfun](pictures/activationfun.PNG)
 
 Here activation function gives output in range of –infinity to +infinity. 
 
@@ -165,7 +165,7 @@ c. five 3x3 layers - receptive field 11x11
 
 d. seven 3x3 layers - receptive field 15x15 and so on.
 
-In the following image, The local receptive field at yellow channel is  3x3 as it also sees 3x3 pixels. The local receptive field at blue channel is  3x3 as it also sees 3x3 pixels. But the global receptive field at blue is 5x5.![33convolve](C:\Users\Nwh\Desktop\33convolve.PNG)
+In the following image, The local receptive field at yellow channel is  3x3 as it also sees 3x3 pixels. The local receptive field at blue channel is  3x3 as it also sees 3x3 pixels. But the global receptive field at blue is 5x5.![33convolve](pictures/33convolve.PNG)
 
 
 
@@ -173,33 +173,33 @@ In the following image, The local receptive field at yellow channel is  3x3 as i
 
 #### a. Go to the Github https://github.com/join
 
-![github1](C:\Users\Nwh\Desktop\github1.PNG)
+![github1](pictures/github1.PNG)
 
 #### b.  Enter a username, valid email address, and password. Use atleast 7 characters, including a number and  a lowercase letter.
 
 #### c. Review the GitHub terms or service and private policy. After creating account you will be diverted to following page
 
-![github2](C:\Users\Nwh\Desktop\github2.PNG)
+![github2](pictures/github2.PNG)
 
 d. Choose a plan either free or developer with $7 per month
 
-![github3](C:\Users\Nwh\Desktop\github3.PNG)
+![github3](pictures/github3.PNG)
 
 e. Your Github account is successfully created.
 
 
 
-![github4](C:\Users\Nwh\Desktop\github4.PNG)
+![github4](pictures/github4.PNG)
 
 #### f.  To upload project, click on a new repository tab 
 
-![github5](C:\Users\Nwh\Desktop\github5.PNG)
+![github5](pictures/github5.PNG)
 
 Enter repository name, description, you can add readme now or later and select create repository tab.
 
 g.  We have to do following steps on command line
 
-![github6](C:\Users\Nwh\Desktop\github6.PNG)
+![github6](pictures/github6.PNG)
 
 h. Go to command prompt or terminal 
 
@@ -207,49 +207,49 @@ h. Go to command prompt or terminal
 
 ​	1. Go to the path where git installed 
 
-​			![git1](C:\Users\Nwh\Desktop\git1.PNG)
+​			![git1](pictures/git1.PNG)
 
-2.  Set Git username and email id	![	git2](C:\Users\Nwh\Desktop\git2.PNG)
+2.  Set Git username and email id	![	git2](pictures/git2.PNG)
 
-3. Go to Project folder and initialize empty Git repository![git3](C:\Users\Nwh\Desktop\git3.PNG)
+3. Go to Project folder and initialize empty Git repository![git3](pictures/git3.PNG)
 
-4. Add all files in the Project folder![git4](C:\Users\Nwh\Desktop\git4.PNG)
+4. Add all files in the Project folder![git4](pictures/git4.PNG)
 
 5. Commit all files with any name to commit
 
-   ![git5](C:\Users\Nwh\Desktop\git5.PNG)
+   ![git5](pictures/git5.PNG)
 
-6. Check the status of commit. It will show nothing, if already committed![git6](C:\Users\Nwh\Desktop\git6.PNG)
+6. Check the status of commit. It will show nothing, if already committed![git6](pictures/git6.PNG)
 
 
 
 7. Add remote origin
 
-   ![git7](C:\Users\Nwh\Desktop\git7.PNG)
+   ![git7](pictures/git7.PNG)
 
 8.   Now push existing repository   
 
-   ![git7_5](C:\Users\Nwh\Desktop\git7_5.PNG)
+   ![git7_5](pictures/git7_5.PNG)
 
 9. Enter the username and password  of Github account
 
 
 
-   ![git8](C:\Users\Nwh\Desktop\git8.PNG)
+   ![git8](pictures/git8.PNG)
 
 Now your project under version control and public on Github
 
 10. Refresh your Github account page in browser, you can see uploaded project files
 
-    ![git9](C:\Users\Nwh\Desktop\git9.PNG)
+    ![git9](pictures/git9.PNG)
 
 11. Click on settings->Github pages -> Source
 
-    ![git9](C:\Users\Nwh\Desktop\git9.PNG)
+    ![git9](pictures/git9.PNG)
 
-    ![git10](C:\Users\Nwh\Desktop\git10.PNG)
+    ![git10](pictures/git10.PNG)
 
-![git11](C:\Users\Nwh\Desktop\git11.PNG)
+![git11](pictures/git11.PNG)
 
 Now your Project is live on above marked link.
 
